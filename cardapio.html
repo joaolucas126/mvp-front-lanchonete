@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Faminto</title>
+        <link rel="stylesheet" href="style.css">
+        <style>.voltar{display:inline-block;margin-bottom:10px;color:#fff;font-size:.85rem}</style>
+    </head>
+    <body>
+
+        <header>
+        <a class="voltar" href="index.html">← Voltar ao início</a>
+        <h1>OLHOU. BABOU. PEDIU.</h1>
+        <p>O cardápio é só o começo.</p>
+        </header>
+
+         <nav class="filtros">
+    <button class="btn-filtro ativo" data-categoria="todos">Todos</button>
+    <button class="btn-filtro" data-categoria="lanches">Lanches</button>
+    <button class="btn-filtro" data-categoria="bebidas">Bebidas</button>
+    <button class="btn-filtro" data-categoria="sobremesas">Sobremesas</button>
+    </nav>
+
+    <div class="conteudo">
+    
+     <main class="cardapio" id="cardapio">
+
+      <div class="item" data-categoria="lanches" data-nome="X-Salada" data-preco="18">
+        <h2>X-Salada</h2>
+        <p>Pão, hambúrguer, queijo, alface e tomate.</p>
+        <div class="item-rodape">
+          <span class="preco">R$ 18,00</span>
+          <button class="btn-add">Adicionar</button>
+        </div>
+      </div>
+
+      <div class="item" data-categoria="lanches" data-nome="X-Bacon" data-preco="22">
+        <h2>X-Bacon</h2>
+        <p>Pão, hambúrguer, queijo, bacon crocante e molho especial.</p>
+        <div class="item-rodape">
+          <span class="preco">R$ 22,00</span>
+          <button class="btn-add">Adicionar</button>
+        </div>
+      </div>
+
+      <div class="item" data-categoria="bebidas" data-nome="Suco Natural" data-preco="8">
+        <h2>Suco Natural</h2>
+        <p>Laranja, limão ou maracujá - 500ml.</p>
+        <div class="item-rodape">
+          <span class="preco">R$ 8,00</span>
+          <button class="btn-add">Adicionar</button>
+        </div>
+      </div>
+
+      <div class="item" data-categoria="bebidas" data-nome="Refrigerante" data-preco="6">
+        <h2>Refrigerante</h2>
+        <p>Lata 350ml, diversos sabores.</p>
+        <div class="item-rodape">
+          <span class="preco">R$ 6,00</span>
+          <button class="btn-add">Adicionar</button>
+        </div>
+      </div>
+
+      <div class="item" data-categoria="sobremesas" data-nome="Pudim" data-preco="10">
+
+        <h2>Pudim</h2>
+
+        <p>Fatia de pudim de leite condensado caseiro.</p>
+        
+        <div class="item-rodape">
+          <span class="preco">R$ 10,00</span>
+          <button class="btn-add">Adicionar</button>
+        </div>
+
+      </div>
+
+      <div class="item" data-categoria="sobremesas" data-nome="Brownie" data-preco="12">
+        <h2>Brownie</h2>
+        <p>Brownie de chocolate com calda quente.</p>
+        <div class="item-rodape">
+          <span class="preco">R$ 12,00</span>
+          <button class="btn-add">Adicionar</button>
+        </div>
+      </div>    
+
+         <div class="item" data-categoria="sobremesas" data-nome="Torta de Limão" data-preco="12">
+        <h2>Torta de Limão</h2>
+        <p>Torta de Limão com raspas de chocolate</p>
+        <div class="item-rodape">
+          <span class="preco">R$ 12,00</span>
+          <button class="btn-add">Adicionar</button>
+        </div>
+      </div>
+
+    </main>
+
+    <aside class="pedido">
+        <h2>Seu Pedido</h2>
+        <ul id="lista-pedido">
+        </ul>
+
+    <p class="vazio" id="msg-vazio">Nenhum item adicionado ainda</p>
+    <div class="total">
+        <span>Total:</span>
+        <span id="total">R$ 0,00</span>
+        </div> 
+    <button id="btn-limpar">Limpar Pedido</button>
+    </aside>    
+
+
+</div>
+
+
+
+    <footer>
+        <p>&copy; AV2 - João Lucas</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>
